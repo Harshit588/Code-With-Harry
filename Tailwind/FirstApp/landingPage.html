@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body id="body" class="transition duration-1000">
+
+  <nav class="flex justify-between items-center px-6 py-4 bg-slate-400">
+
+    <div>
+      <img class="rounded-full ml-8 hover:scale-125 transition duration-500" src="https://avatars.githubusercontent.com/u/123058771?v=4&size=64" alt="myLogo">
+    </div>
+
+    <ul id="menu" class=" space-x-10 flex font-semibold cursor-pointer text-black ">
+      <li><a href="#" class="hover:text-indigo-600 hover:scale-125 transition duration-500">Home</a></li>
+      <li><a href="#" class="hover:text-indigo-600 hover:scale-125 transition duration-500">Features</a></li>
+      <li><a href="#" class="hover:text-indigo-600 hover:scale-125 transition duration-500">Pricing</a></li>
+      <li><a href="#" class="hover:text-indigo-600 hover:scale-125 transition duration-500">Contact</a></li>
+      <li class="hover:text-indigo-600 hover:scale-125 transition duration-500" onclick="changeTheme('light')">Light Mode</li>
+      <li class="hover:text-indigo-600 hover:scale-125 transition duration-500" onclick="changeTheme('dark')">Dark Mode</li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <div class="text-center bg-purple-200 h-20 flex items-center justify-center text-3xl font-bold text-black">
+      THE BEST COURSES ARE HERE
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-10 max-w-7xl mx-auto my-10">
+
+      <!-- Java Card -->
+      <div class="h-80 w-64 p-4 bg-white rounded-lg shadow-lg flex flex-col items-center space-y-4 ">
+
+        <img src="https://education.oracle.com/file/general/p-80-java.png" alt="Java Logo" class="h-32 w-32 object-contain transition duration-300 hover:scale-110">
+
+        <p class="text-2xl font-bold text-center text-purple-600">Java Development</p>
+
+        <div class="flex flex-col items-center space-y-2 ">
+
+          <a href="https://dev.java/" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300 hover:scale-110">Explore Java</a>
+
+          <a href="#" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition duration-300 hover:scale-110">Add to Cart</a>
+
+        </div>
+      </div>
+
+      <!-- MERN Card -->
+      <div class="h-80 w-64 p-4 bg-white rounded-lg shadow-lg flex flex-col items-center space-y-4">
+
+        <img src="https://images.prismic.io/loco-blogs/79328284-f97b-489f-924c-eb3b17e34b56_image2.png?auto=compress%2Cformat&rect=0%2C0%2C1999%2C1124&w=1920&h=1080&ar=1.91%3A1" alt="MERN Course" class="h-32 w-32 object-contain transition duration-300 hover:scale-110">
+
+        <p class="text-2xl font-bold text-center text-purple-600">MERN STACK</p>
+
+        <div class="flex flex-col items-center space-y-2">
+
+          <a href="https://www.mongodb.com/resources/languages/mern-stack" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300 hover:scale-110">Explore MERN</a>
+
+          <a href="#" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition duration-300 hover:scale-110">Add to Cart</a>
+
+        </div>
+      </div>
+
+      <!-- Node.js Card -->
+      <div class="h-80 w-64 p-4 bg-white rounded-lg shadow-lg flex flex-col items-center space-y-4">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk0fabCTMGGKaZdICsADV54JcimHIRtZ5FFQ&s" alt="Node Backend" class="h-32 w-32 object-contain transition duration-300 hover:scale-110">
+
+        <p class="text-2xl font-bold text-center text-purple-600">Backend Developer</p>
+
+        <div class="flex flex-col items-center space-y-2">
+
+          <a href="https://nodejs.org/docs/latest/api/" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300 hover:scale-110">Explore Node</a>
+
+          <a href="#" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition duration-300 hover:scale-110">Add to Cart</a>
+
+        </div>
+      </div>
+
+      <!-- React.js Card -->
+      <div class="h-80 w-64 p-4 bg-white rounded-lg shadow-lg flex flex-col items-center space-y-4">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="ReactJS" class="h-32 w-32 object-contain transition duration-300 hover:scale-110">
+
+        <p class="text-2xl font-bold text-center text-purple-600">React Developer</p>
+
+        <div class="flex flex-col items-center space-y-2">
+
+          <a href="https://react.dev/" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300 hover:scale-110">Explore React</a>
+
+          <a href="#" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition duration-300 hover:scale-110">Add to Cart</a>
+
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+
+<script>
+  const changeTheme = (mode) => {
+    const body = document.getElementById('body');
+    if (mode === 'dark') {
+      document.getElementById('body').style.background = "black";
+      document.getElementById('body').style.color = "white";
+    } else {
+      document.getElementById('body').style.background = "white";
+      document.getElementById('body').style.color = "black";
+    }
+  }
+</script>
+
+</html>

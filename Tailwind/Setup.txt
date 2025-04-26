@@ -1,0 +1,15 @@
+1. npm init -y
+
+2. npm install -D tailwindcss@3.4.1
+
+3. npm install vite
+
+4. npx tailwindcss init --full
+
+        4.1 change tailwind.config.js file
+                => content: ["*"],
+        
+        4.2 change package.json file    
+                =>  "start": "vite"
+
+5. npm start
