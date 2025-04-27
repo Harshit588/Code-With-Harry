@@ -12,4 +12,6 @@
         4.2 change package.json file    
                 =>  "start": "vite"
 
-5. npm start
+5. add in style in index.html ->  <script src="https://cdn.tailwindcss.com"></script>
+
+6. npm start
